@@ -12,14 +12,20 @@ main {
     flex-flow: column wrap;
 }
 
-.characterdetails {
+.characterdetails {position: relative;
     border: 15px solid red;
     height: 15%;
     display: flex;
+    flex-flow: row wrap;
 }
 
 .characterdetails h1 {
     margin: auto;
 }
+
+.raceb {position: relative;
+right: 75%;
+margin-top: auto;
+margin-bottom: auto;}
 
 .attribute {}
