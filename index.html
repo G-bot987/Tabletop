@@ -21,21 +21,27 @@
         5
     </var>
     <p id="test2">
+
+        <p id="test3">
         
     </p>
     <main>
+
+     
+
         <container class="characterdetails">
             <h1>Character Details</h1>
             <card class="raceb">
                 <label for="race"> Characters Race:</label>
-                <select id="race">
-                    <option value="">Imperial Human</option>
-                    <option selected>Human</option>
-                    <option value="">Haulende</option>
-                    <option value="">Astralende</option>
-                    <option value="">Son's of Aegier</option>
-                    <option value="">Clans of Fulgrix</option>
-                    <option>Gnome</option>
+                <select class="races"> 
+                    <option  value="1" data-test="Imperial" href="#">Imperial Human</option>
+                    <option  value="2" href="#">Human</option>
+                    <option  value="3"href="#">Haulende</option>
+                    <option  value="4"href="#">Astralende</option>
+                    <option  value="5"href="#">Son's of Aegier</option>
+                    <option  value="6"href="#">Clans of Fulgrix</option>
+                    <option  value="7"href="#">Gnome</option>
+                    <option  value="8"href="#">Custom Race</option>
                     
                 </select>
             </card>
@@ -49,11 +55,9 @@
             </card>
 
             <card class="attribute">
-                <p>DEX</p>
-                
-
-                    <input type="number" id="dexv" placeholder="dexterity">
-                </var>
+                <label for="Dexterity">DEX</label>
+                    <input type="number" id="dex" name="dexterity" onchange="dexcounter()" min="1" max="20">
+            </card>
                 
             
             <card class="attribute">
